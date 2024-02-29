@@ -1,0 +1,104 @@
+/* A debug class, used to separate components graphically during development */
+.debug {
+    border-style:solid;
+}
+
+.align-right {
+    text-align: right
+}
+.align-center {
+    text-align: center;
+}
+
+.dishImageSpan {
+  text-align: center;
+  display: inline-block; /* Use inline-block to create "columns" */
+  width: 100px; /* Fixed width for each column */
+  margin: 10px; /* Margin to create space between columns */
+}
+
+.dishImageSpan img {
+  vertical-align: top; /* Align the upper part of images */
+  max-width: 80%; /* Ensure images don't exceed the container width */
+  height: auto; /* Maintain aspect ratio for images */
+}
+
+.dishImageSpan div {
+  margin-top: 5px; /* Margin between image and text */
+}
+
+/* Container for the entire details view */
+.details-container {
+  display: flex;
+  gap: 20px;
+  background-color: #fff; /* White */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Title styling */
+.details-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Dark grey */
+}
+
+/* Container for the left side (image) and right side (prices, ingredients, instructions) */
+.details-container .left-side {
+  flex: 1;
+}
+
+.details-container .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Image styling */
+.details-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Prices styling */
+.details-container .prices {
+  background-color: #f2f2f2; /* Light grey */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Ingredients styling */
+.details-container .ingredients {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light grey */
+  background-color: #f9f9f9; /* Off-white */
+  border-radius: 8px;
+}
+
+/* Instructions styling */
+.details-container .instructions {
+  color: #555; /* Grey */
+}
+
+@media (min-width: 450px) and (min-device-width: 450px){
+  .flexParent {
+    display: flex; 
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+.sidebar {
+  /*Adjust width of sidebar*/
+  width: 200px;
+  padding: 20px;
+  background-color: #f9f9f9; /*off-white*/
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 10px;
+}

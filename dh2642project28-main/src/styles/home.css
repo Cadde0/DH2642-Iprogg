@@ -1,0 +1,18 @@
+/* Home page css*/
+
+.homeHeader {
+    margin: 5px;
+    margin-top: 10px;
+    color: white;      /* Text Colour */
+    background-color: transparent;     /* Background Colour*/
+    text-align: center;
+}
+
+.contentContainer {
+    padding-top: 10px; /* Adjust this value based on the actual height of your header */
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+

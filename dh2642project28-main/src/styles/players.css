@@ -1,0 +1,166 @@
+/* players.css */
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+
+.player-search {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 500px; /* Adjust the maximum width as needed */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  background-color: #191919;
+  color: white;
+}
+
+/* Optionally, you can add some hover and focus styles for better user experience */
+.player-search:hover,
+.player-search:focus {
+  border-color: #ff6300; /* Change the color as needed */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.player-dropdown {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+#teamDropdown,
+#positionDropdown {
+  font-size: 18px;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  background-color: #191919;
+  color: white;
+}
+
+/* Optionally, you can add some hover and focus styles for better user experience */
+#teamDropdown:hover,
+#teamDropdown:focus,
+#positionDropdown:hover,
+#positionDropdown:focus {
+  border-color: #ff6300; /* Change the color as needed */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  
+}
+
+.player-list {
+  list-style: none;
+  padding: 16px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-item:hover{
+  transform: scale(1.1);
+  .player-name {color: #ff6300}
+}
+
+.player-item {
+  cursor: pointer;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.player-img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.player-name {
+  font: inherit;
+  font-size: small;
+  margin-top: 5px;
+  font-weight: inherit;
+  color: white;
+}
+
+.selected-player-details {
+  display: flex;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #191919;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease; /* Add transition for smooth movement */
+  border-radius: 10px;
+}
+
+
+.player-details {
+  flex: 1;
+  text-align: left;
+  text-wrap: nowrap;
+  color: white;
+}
+
+.enlarged-player-img {
+  width: auto;
+  height: 450px;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.selected-player-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #191919;
+  color: white;
+}
+
+.noResults-message {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+

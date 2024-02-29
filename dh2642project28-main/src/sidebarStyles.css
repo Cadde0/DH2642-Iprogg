@@ -1,0 +1,72 @@
+
+/* Sidebar */
+
+
+.sidebar {
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Adjust this value as needed, especially if there's a header */
+    height: 100vh; /* Allows the sidebar to scroll independently if it's longer than the viewport */
+    padding-right: 10px;
+    
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.sidebar-button {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 230px;
+    border: 1px solid gray;
+}
+
+.sidebar-logo {
+    border-radius: 1000px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #2f2f2f;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.sidebar-logo:hover {
+    text-decoration: underline;
+    border-color: #646cff;
+    
+}
+
+
+/* app container */
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+
+}

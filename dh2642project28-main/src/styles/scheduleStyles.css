@@ -1,0 +1,104 @@
+
+html {
+    min-height: 100vh;
+}
+
+.schedule-container {
+    margin-left: 20px;
+}
+/* app content */
+
+.app-content {
+    flex-grow: 1; /* Ensure this takes up the remaining space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+}
+
+h2 {
+    width: 100%;
+}
+
+/* schedule games */
+.game-buttons {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.team-abbr {
+    margin-right: 40px;
+  }
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-logo {
+    height: 50px;
+}
+
+.team-abbr {
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+/* This will ensure that the 'vs' is centered between the logos */
+.vs-text {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.games {
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap; /* To wrap items to the next line when the row is full */
+    gap: 10px; /* Space between items */
+}
+
+.game-time {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #ffcfa9; /* Example: a soft orange */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+    
+}
+
+/* For the date buttons to navigate to specific date in schedule */
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 7em;
+    background-color: #191919;
+    padding: 10px;
+    z-index: 1000; /* Ensure it stays above other content */
+    overflow-x: auto; /* If you have many dates, this will allow scrolling horizontally */
+    white-space: nowrap; /* Keep buttons in a single line */
+    width: 100%;
+    margin-left: 10px;
+  }
+
+.date-buttons {
+    border: 2px solid transparent;
+}
+
+  h3 {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+.schedule-text {
+    color: white;
+}

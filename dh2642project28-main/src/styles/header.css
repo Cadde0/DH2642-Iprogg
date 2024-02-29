@@ -1,0 +1,51 @@
+/* General styles for the header */
+
+@import url('https://fonts.cdnfonts.com/css/high-school-usa-sans');
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between sidebar and logo/website name */
+  height: 100px;
+  background-size: cover;
+  background-position-y: -550px;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep the background fixed */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Styles for the sidebar toggle button */
+.sidebar-toggle {
+  cursor: pointer;
+  color: #ff6300;
+  height: 30px;
+  margin-left: 50px; /* Adjust the margin to position it to the left */
+  flex: 0 0 auto; /* Elements won't grow or shrink */
+}
+
+/* Container for logo and website name */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the contents horizontally */
+  flex: 1; /* Allow the container to take remaining space */
+}
+
+.logo {
+  height: 6em;
+  margin-right: 1em; /* Adjust the space between the logo and the website name */
+  flex: 0 0 auto; /* Elements won't grow or shrink */
+  margin-left: -50px;
+}
+
+/* Styles for the website name */
+.website-name {
+  font-family: 'High School USA Sans', sans-serif;
+  font-size: 4em;
+  color: #ff6300;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+  text-shadow: 2px 2px black;
+}

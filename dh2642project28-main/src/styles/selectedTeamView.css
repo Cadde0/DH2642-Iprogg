@@ -1,0 +1,50 @@
+/* SelectedTeamView.css */
+
+.selected-team-container {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: auto 1fr; /* Header on top, rest for stats and players */
+  height: 100vh;
+  color:#fff;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  padding-left: 200px;
+  margin-left: -200px;
+  margin-right: -600px;
+  padding-right: 200px;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.buttons-fav button{
+  margin-bottom: 20px;
+  background-color: rgb(87, 87, 95);
+}
+
+.team-stats {
+  background-color: #333;
+  font-size: larger;
+  font-weight: bold;
+  width: 20vw;
+  padding: 20px;
+  grid-row: 2;
+  grid-column: 3;
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+  border: 2px solid #E3651D;
+
+}
+
+.team-players {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  grid-row: 2;
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+}

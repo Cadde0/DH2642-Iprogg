@@ -1,0 +1,13 @@
+/* A debug class, used to separate components graphically during development */
+.debug {
+    border-style:solid;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.leftAlign {
+    text-align: left;
+}
+

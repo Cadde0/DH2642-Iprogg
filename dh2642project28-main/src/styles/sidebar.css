@@ -1,0 +1,47 @@
+/* sidebar.css */
+
+/* Styles for the sidebar */
+.sidebar {
+  position: fixed;
+  top: 100px; /* Adjust this value to position the sidebar below the header */
+  left: 0;
+  height: calc(100vh - 100px); /* Subtract header height from viewport height */
+  width: 0;
+  background-color: #E3651D;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Places buttons at the top and bottom */
+}
+  
+  /* Show sidebar when the 'show-sidebar' class is present */
+  .sidebar.show-sidebar {
+    width: 150px;
+  }
+  
+  /* Add styling to the sidebar menu items */
+  .sidebar-menu {
+    padding-top: 20px; /* Adjust padding to create space for the dropdown */
+  }
+  
+  .sidebar-button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* On hover, change background color */
+  .sidebar-button:hover {
+    background-color: #d85a11;
+  }
+  
+  .user-sidebar-button {
+    margin-top: auto; /* Pushes the buttons to the bottom */
+}
