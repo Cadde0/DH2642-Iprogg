@@ -1,1 +1,1 @@
-# DH2642-iprog
+# DH2642-Interaction Programming and the Dynamic Web
